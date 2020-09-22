@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="Shift_JIS" ?>
+
+ <!-- ============================================================= -->
+ <!-- GSCope DTD (Simple-Result) 2002.12.12 -->
+ <!-- for Ver 1,4,0,3 -->
+ <!-- ============================================================= --> 
+
+<!-- ELEMENT -->
+   <!-- simple-result -->
+   <ELEMENT simple-result (head, rank+) >
+<!-- head -->
+   <ELEMENT head (title?) >
+<!-- title -->
+   <ELEMENT title (#PCDATA) >
+<!-- rank -->
+   <ELEMENT rank (candidate*, path+) >
+<!-- credit -->
+   <ELEMENT credit #PCDATA >
+<!-- path -->
+   <ELEMENT path (credit*,item+,arrow+) >
+<!-- candidate -->
+   <ELEMENT canditate (#PCDATA) >
+<!-- item -->
+   <ELEMENT item EMPTY >
+<!-- arrow -->
+   <ELEMENT arrow EMPTY >
+
+<!-- ATTLIST -->
+<ATTLIST head
+   date CDATA #IMPLIED >
+<ATTLIST rank
+   name CDATA #REQUIRED
+   distance NMTOKEN #IMPLIED
+   numOfCandidate
+   NMTOKEN #IMPLIED
+   success NMTOKEN #IMPLIED >
+<ATTLIST candidate
+   name CDATA #REQUIRED
+   isSuccess (true|false) "true" >
+<ATTLIST path
+   name CDATA #REQUIRED
+   id CDATA
+   distance NMTOKEN #IMPLIED
+   success NMTOKEN #IMPLIED
+   author CDATA #IMPLIED
+   date CDATA #IMPLIED >
+<ATTLIST credit
+   date NMTOKEN #REQUIRED
+   last NMTOKEN #REQUIRED>
+<ATTLIST item
+   name CDATA #REQUIRED
+   id CDATA
+   pos CDATA #IMPLIED
+   color CDATA "666666"
+   info CDATA #IMPLIED
+   distance NMTOKEN #IMPLIED
+   status (main|sub) "main"
+   weight NMTOKEN "1"
+   type (normal|bold|dot|text|compound|
+      drug|protein|gene|phenotype|left|right) "normal"
+   url CDATA #IMPLIED
+   add NMTOKEN
+   addc NMTOKEN "000000">
+<ATTLIST arrow
+   name CDATA #REQUIRED
+   from CDATA #REQUIRED
+   to CDATA #REQUIRED
+   pos CDATA #IMPLIED
+   color CDATA "666666"
+   distance NMTOKEN "1"
+   type (normal|bold|dash|is_a|part_of|none) "normal"
+   style (up|updown|upline|downup|down|downline|lineup|linedown|line) "up"
+   direction (forward|reverse|both) "forward"   
+   url CDATA #IMPLIED
+   info CDATA #IMPLIED >
+ 

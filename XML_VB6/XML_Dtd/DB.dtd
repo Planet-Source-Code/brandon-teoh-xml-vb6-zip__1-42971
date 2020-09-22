@@ -1,0 +1,22 @@
+<!ELEMENT DATABASE (TABLE+)>
+
+<!ELEMENT TABLE (COLUMN+)>
+
+<!ELEMENT COLUMN (COL_DataType,COL_Length,COL_Precision,COL_Scale,Identity_Seed,Identity_Increment)>
+
+<!ELEMENT COL_DataType (#PCDATA)>
+<!ELEMENT COL_Length (#PCDATA)>
+<!ELEMENT COL_Precision (#PCDATA)>
+<!ELEMENT COL_Scale (#PCDATA)>
+<!ELEMENT Identity_Seed (#PCDATA)>
+<!ELEMENT Identity_Increment (#PCDATA)>
+
+<!ATTLIST DATABASE NAME CDATA #REQUIRED>
+<!ATTLIST TABLE NAME CDATA #REQUIRED>
+
+<!ATTLIST COLUMN 
+  NAME CDATA #REQUIRED
+  Allow_Null (Checked|Unchecked) "Checked"
+  Default_Value CDATA ""
+  Is_Identity (Checked|Unchecked) "Unchecked"
+  Is_RowGuid (Checked|Unchecked) "Unchecked">

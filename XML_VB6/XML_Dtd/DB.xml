@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<!DOCTYPE DATABASE SYSTEM "file:///C:/DB.dtd">
+
+<DATABASE NAME="HQDatabase">
+ <TABLE NAME="PmtAd_Autonumber">
+   <COLUMN NAME="Number_Desc">
+     <COL_DataType>VarChar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="AutoNum">
+     <COL_DataType>int</COL_DataType>
+     <COL_Length>4</COL_Length>
+     <COL_Precision>10</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+ </TABLE>
+ 
+ <TABLE NAME="PmtAd_Master"> 
+   <COLUMN NAME="MasterID" Allow_Null="Unchecked" Is_Identity="Checked">
+     <COL_DataType>numeric</COL_DataType>
+     <COL_Length>9</COL_Length>
+     <COL_Precision>18</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed>1</Identity_Seed>
+     <Identity_Increment>1</Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Voucher_ID">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Recipient_ID">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Cheque_ID">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Advice_Date">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="CO">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+ </TABLE>
+ 
+ <TABLE NAME="PmtAd_Sub"> 
+    <COLUMN NAME="SubID">
+     <COL_DataType>numeric</COL_DataType>
+     <COL_Length>9</COL_Length>
+     <COL_Precision>18</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="MasterID">
+     <COL_DataType>numeric</COL_DataType>
+     <COL_Length>9</COL_Length>
+     <COL_Precision>18</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Title">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Details">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>4000</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Amt">
+     <COL_DataType>money</COL_DataType>
+     <COL_Length>8</COL_Length>
+     <COL_Precision>19</COL_Precision>
+     <COL_Scale>4</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+ </TABLE>
+ 
+ <TABLE NAME="PmtAd_Cheque">
+   <COLUMN NAME="ChequeID" Allow_Null="Unchecked" Is_Identity="Checked">
+     <COL_DataType>numeric</COL_DataType>
+     <COL_Length>9</COL_Length>
+     <COL_Precision>18</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed>1</Identity_Seed>
+     <Identity_Increment>1</Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="ChequeNo">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="ChequeBank">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="ChequeAmt">
+     <COL_DataType>money</COL_DataType>
+     <COL_Length>8</COL_Length>
+     <COL_Precision>19</COL_Precision>
+     <COL_Scale>4</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+ </TABLE>
+ 
+ <TABLE NAME="PmtAd_Voucher">
+   <COLUMN NAME="VoucherID" Allow_Null="Unchecked" Is_Identity="Checked">
+     <COL_DataType>numeric</COL_DataType>
+     <COL_Length>9</COL_Length>
+     <COL_Precision>18</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed>1</Identity_Seed>
+     <Identity_Increment>1</Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="VoucherNo">
+     <COL_DataType>nvarchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+ </TABLE>
+ 
+ <TABLE NAME="FACT_Customer">
+   <COLUMN NAME="AgentCode">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="CustCode">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Name">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Address">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>150</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="City">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="State">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Country">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Pincode">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Telephone">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Fax">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Lpurc_date">
+     <COL_DataType>smalldatetime</COL_DataType>
+     <COL_Length>4</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Lpaid_date">
+     <COL_DataType>smalldatetime</COL_DataType>
+     <COL_Length>4</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Credit_lt">
+     <COL_DataType>money</COL_DataType>
+     <COL_Length>8</COL_Length>
+     <COL_Precision>19</COL_Precision>
+     <COL_Scale>4</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Credit_now">
+     <COL_DataType>money</COL_DataType>
+     <COL_Length>8</COL_Length>
+     <COL_Precision>19</COL_Precision>
+     <COL_Scale>4</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Chall_now">
+     <COL_DataType>money</COL_DataType>
+     <COL_Length>8</COL_Length>
+     <COL_Precision>19</COL_Precision>
+     <COL_Scale>4</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Terms">
+     <COL_DataType>int</COL_DataType>
+     <COL_Length>4</COL_Length>
+     <COL_Precision>10</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Cst_no">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Wbst_no">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Cust_Vend">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Salut">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="[File]">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Rate">
+     <COL_DataType>money</COL_DataType>
+     <COL_Length>8</COL_Length>
+     <COL_Precision>19</COL_Precision>
+     <COL_Scale>4</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Tds_rate">
+     <COL_DataType>money</COL_DataType>
+     <COL_Length>8</COL_Length>
+     <COL_Precision>19</COL_Precision>
+     <COL_Scale>4</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Rests">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Date">
+     <COL_DataType>smalldatetime</COL_DataType>
+     <COL_Length>4</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Address_s">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="City_s">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="State_s">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Country_s">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Pincode_s">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Phone_s">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Fax_s">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Scheme">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Glcode">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Custstat">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Type">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Sub_Type">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Pan_no">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>50</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+   <COLUMN NAME="Excise">
+     <COL_DataType>varchar</COL_DataType>
+     <COL_Length>10</COL_Length>
+     <COL_Precision>0</COL_Precision>
+     <COL_Scale>0</COL_Scale>
+     <Identity_Seed></Identity_Seed>
+     <Identity_Increment></Identity_Increment>
+   </COLUMN>
+ </TABLE>
+</DATABASE>

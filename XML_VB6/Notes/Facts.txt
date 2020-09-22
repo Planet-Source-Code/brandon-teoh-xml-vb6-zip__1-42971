@@ -1,0 +1,25 @@
+1. Of different between 'Child','Doctype','Element' and 'Text of XML document:
+   
+<?xml version="1.0"?>              --> MSXML2.IXMLDOMElement.firstChild
+<!DOCTYPE DATABASE SYSTEM "file:///C:/DB.dtd"> -->MSXML2.IXMLDOMElement.doctype 
+
+ <DATABASE NAME="HQDatabase">      --> MSXML2.IXMLDOMElement.documentElement
+   <TABLE NAME="PmtAd_Autonumber">
+      <COLUMN NAME="Number_Desc">
+        <COL_DataType>VarChar</COL_DataType>
+      </COLUMN>
+   </TABLE>
+  </DATABASE>
+
+  Attributes
+  ----------
+  version="1.0"  -- > for firstChild
+  SYSTEM "file:///C:/DB.dtd" --> for doctype
+  NAME="HQDatabase" --> element 
+  NAME="PmtAd_Autonumber" --> element 
+  NAME="Number_Desc" --> element 
+
+  Text
+  ----
+  Varchar
+  
