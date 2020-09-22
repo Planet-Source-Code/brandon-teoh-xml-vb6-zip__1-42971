@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!-- This is a document with external DTD -->
+<!DOCTYPE note SYSTEM "file:///c:/notes2.dtd">
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don't forget me this weekend!</body>
+</note> 

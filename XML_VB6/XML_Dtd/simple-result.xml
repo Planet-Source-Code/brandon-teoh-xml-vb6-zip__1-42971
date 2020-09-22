@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE simple-result SYSTEM "file:///C:/simple-result.dtd">
+
+<simple-result>
+
+<head>
+
+<title>test_data</title> </eng_editor/knowledge%20Editor/p2.htm>
+
+</head>
+
+<rank name="rank_test"> </eng_editor/knowledge%20Editor/p3.htm>
+
+<path name="path_test"> </eng_editor/knowledge%20Editor/p4.htm>
+
+<item id="1" name="EC:1.1.99.8" </eng_editor/knowledge%20Editor/p5.htm> info="Alcohol dehydrogenase" </eng_editor/knowledge%20Editor/p6.htm> color="00FF00" </eng_editor/knowledge%20Editor/p7.htm> pos="11.35833,8.966666" status="main" </eng_editor/knowledge%20Editor/p8.htm> type="normal" url="http://www.genome.ad.jp/dbget-bin/www_bget?enzyme+1.1.99.8"/>
+
+<item id="2" name="COMPOUND:C00084" info="Acetaldehyde.Ethanal" color="FF0000" pos="19.25833,8.966666" status="main" type="normal" </eng_editor/knowledge%20Editor/p9.htm> url="http://www.genome.ad.jp/dbget-bin/www_bget?compound+C00084"/>
+
+<arrow name="EC:1.1.99.8::COMPOUND:C00084" </eng_editor/knowledge%20Editor/p10.htm> from="1" to="2" </eng_editor/knowledge%20Editor/p11.htm> pos="15.30833,8.966666" color="000000" </eng_editor/knowledge%20Editor/p12.htm> info="activate" </eng_editor/knowledge%20Editor/p13.htm> direction="forward" </eng_editor/knowledge%20Editor/p14.htm> style="up" </eng_editor/knowledge%20Editor/p15.htm> type="normal" </eng_editor/knowledge%20Editor/p16.htm> url=""/>
+
+</path>
+
+</rank>
+
+</simple-result> 
